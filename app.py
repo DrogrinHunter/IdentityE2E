@@ -4,7 +4,6 @@ import requests
 import os
 from flask import Flask, session, url_for, redirect, render_template, request, abort, flash
 
-
 app = Flask(__name__)
 BACKEND_URL = os.environ.get("BACKEND_URL", default="http://localhost:5000")
 
@@ -63,3 +62,4 @@ def FUN_checkout():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=8080)
+    
